@@ -1,0 +1,28 @@
+import sys
+import time
+
+num1 = int(input("Please enter a number : "))
+num2 = int(input("Please enter a number : "))
+num3 = int(input("Please enter a number : "))
+
+ #if num 1 is largest
+    if (num1 > num2) and (num1 > num3):
+        large = num1
+
+        #if num2 is larger than num1
+        if (num2 > num3):
+            mid = num2
+            small = num3
+
+        #else num1 is larger than num2
+        else:
+            mid = num3
+            small = num2
+	
+	#if num 2 is largest 
+		if (num2> num1) and (num2 > num3):
+			large = num2
+		
+	# if num 3 is largest
+		if (num3 > num1) and (num3 > num2):
+			large = num3
